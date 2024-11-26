@@ -43,7 +43,7 @@ for section in menu_sections:
 date_today = datetime.now().strftime("%d-%m-%Y-%H:%M:%S")
 filename = f"data/menu_{date_today}.txt"
 with open(filename, "w") as file:
-    file.write("Menu del giorno {date_today} \n\n")
+    file.write(f"Menu del giorno {date_today} \n\n")
     file.write(formatted_menu)
 
 logging.info(f"Menu salvato in {filename}")
